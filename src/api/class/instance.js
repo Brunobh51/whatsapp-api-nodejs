@@ -104,9 +104,9 @@ class WhatsAppInstance {
                     })
                     this.instance.online = false
                 }
-
-                await this.SendWebhook('connection', {
-                    connection: connection,
+//
+//                await this.SendWebhook('connection', {
+//                    connection: connection,
                 }, this.key)
             } else if (connection === 'open') {
                 if (config.mongoose.enabled) {
@@ -119,9 +119,9 @@ class WhatsAppInstance {
                     }
                 }
                 this.instance.online = true
-
-                await this.SendWebhook('connection', {
-                    connection: connection,
+//
+//                await this.SendWebhook('connection', {
+//                    connection: connection,
                 }, this.key)
             }
 
